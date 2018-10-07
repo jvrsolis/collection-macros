@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Collection;
+
 /**
  * An extension to the where methods
  * available in the array.

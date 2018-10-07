@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Collection;
+
 Collection::macro('float', function () {
     $function = function (&$array) use (&$function) {
         foreach ($array as $key => $value) {

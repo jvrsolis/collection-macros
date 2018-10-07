@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Collection;
+
 /**
  * Pad collection to the specified length with a value.
  *

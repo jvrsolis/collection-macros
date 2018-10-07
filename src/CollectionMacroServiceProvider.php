@@ -24,12 +24,12 @@ class CollectionMacroServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->make(glob(__DIR__ . '/macros/*.php'))
+        Collection::make(glob(__DIR__ . '/macros/*.php'))
             ->mapWithKeys(function ($path) {
                 return [$path => pathinfo($path, PATHINFO_FILENAME)];
             })
             ->reject(function ($macro) {
-                return $this->hasMacro($macro);
+                return Collection::hasMacro($macro);
             })
             ->each(function ($macro, $path) {
                 require_once $path;
