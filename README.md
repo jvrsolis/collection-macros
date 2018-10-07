@@ -8,6 +8,10 @@ The purpose of making this package is to remove the preserve functionality and a
 
 <b>PLEASE LET ME KNOW OF ANY ERRORS IN FUNCTIONALITY SO THAT I MAY UPDATE THIS FILE AND OTHERS CAN BENEFIT FROM THIS.</b>
 
+## Installation
+
+	composer require jvrsolis/collection-macros:dev-master
+
 # Functions
 
 	$this->search : Search the array for a given value and return the corresponding key if successful.
