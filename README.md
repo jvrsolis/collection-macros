@@ -1,19 +1,16 @@
-# Collection Macros
-A list of array macros for laravel with functions found across the web and some I created. 
-These macros also contain laravel's collection functions converted into array function macros.
-The purpose of making this file is to remove the Collection wrapper class in cases when the user just wants the functionality
-that Collections provide without having ot worry when to convert at any point of their application.
+# [WORK IN PROGRESS]
 
-## Some caveats: 
-	The reason on wants to use Collections is to be able to chain methods and have the original or modified array stored as a property to be readily accessible. 
-	You lose these abilities by using just the Collection helper class.
-	The Collection helper does not store the array in itself so no chaining can be done. 
-	The Collection helper just has predefined functions that the array goes through to be transformed.
-	The Collection helper has all static methods.
-	To mimic chaining you must pass the array from one function to another yourself.
-	Most of the methods below require an array as the initial input and will output an array, no collections.
-	Some of these methods are not tested and during their conversion from Collection to Collection there may have been an error.
-	PLEASE LET ME KNOW OF ANY ERRORS IN FUNCTIONALITY SO THAT I MAY UPDATE THIS FILE AND OTHERS CAN BENEFIT FROM THIS.
+# Collection Macros
+A list of collection macros for laravel with functions found across the web and some I created. 
+These macros also contain laravel's collection functions converted into macros.
+The purpose of making this package is to remove the preserve functionality and add any additional functions for optional use.
+
+
+<b>PLEASE LET ME KNOW OF ANY ERRORS IN FUNCTIONALITY SO THAT I MAY UPDATE THIS FILE AND OTHERS CAN BENEFIT FROM THIS.</b>
+
+## Installation
+
+	composer require jvrsolis/collection-macros:dev-master
 
 # Functions
 
